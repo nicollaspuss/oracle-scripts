@@ -38,7 +38,5 @@ sid,serial#,inst_id
 from gv$session
 where username like upper('%&User%')
 and status = 'ACTIVE'
-and username not in ('SYS', 'SYS_DBA', 'DBSNMP', 'C##NICOLLAS_PUSS')
--- and machine = 'app1osbcrmb001p.sicredi.net'
--- and username = 'SYSBACKUP'
+and username not in ('SYS', 'SYS_DBA', 'DBSNMP', 'NICOLLAS_PUSS')
 order by last_call_et, logon_time asc;
