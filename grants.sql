@@ -1,4 +1,4 @@
-SET LONG 30000
+SET LONG 3000
 DEFINE nomeuser = '&username'
 undef owner
 select 'create user '||username||' identified by <SENHA> default tablespace '||default_tablespace||' temporary tablespace '||temporary_tablespace||';' AS "RECRIANDO USUARIO OU ROLE"
