@@ -1,0 +1,9 @@
+# Example - PDB:
+srvctl add service -d database -s servicename -serverpool serverpool1 -pdb PDBDATA -c SINGLETON
+srvctl start service -d database -s servicename
+srvctl status service -d database -s servicename
+
+# Example - NONPDB:
+srvctl add service -d database -s servicename -serverpool serverpool1 -c SINGLETON
+srvctl start service -d database -s servicename
+srvctl status service -d database -s servicename

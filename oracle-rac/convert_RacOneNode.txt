@@ -1,0 +1,2 @@
+# Example:
+srvctl convert database -c RACOneNode -d database
